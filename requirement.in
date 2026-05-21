@@ -1,0 +1,127 @@
+# Requirements for Password Strength Analyzer
+
+## Software Requirements
+
+### Programming Language
+
+* Python 3.8 or higher
+
+### Required Python Libraries
+
+| Library                | Purpose                     |
+| ---------------------- | --------------------------- |
+| `re`                   | Regular expression matching |
+| `math`                 | Entropy calculation         |
+| `secrets`              | Secure password generation  |
+| `string`               | Character sets              |
+| `bcrypt`               | Password hashing            |
+| `sqlite3` *(optional)* | Database integration        |
+
+---
+
+# Hardware Requirements
+
+| Component        | Minimum Requirement    |
+| ---------------- | ---------------------- |
+| Processor        | Intel i3 or equivalent |
+| RAM              | 4 GB                   |
+| Storage          | 500 MB free space      |
+| Operating System | Windows/Linux/macOS    |
+
+---
+
+# Functional Requirements
+
+## 1. Password Input
+
+* User can enter a password
+* Input should be hidden for security
+
+## 2. Strength Analysis
+
+The system should check:
+
+* Password length
+* Uppercase letters
+* Lowercase letters
+* Numbers
+* Special characters
+* Common passwords
+
+## 3. Entropy Calculation
+
+The tool should calculate password entropy:
+
+H = L \times \log_2(N)
+
+## 4. Password Rating
+
+The system should classify passwords as:
+
+* Weak
+* Moderate
+* Strong
+
+## 5. Suggestions
+
+The system should suggest:
+
+* Adding symbols
+* Increasing length
+* Using mixed characters
+
+## 6. Secure Password Generator
+
+* Generate random strong passwords
+* Use cryptographically secure methods
+
+## 7. Password Reuse Prevention (Optional)
+
+* Store hashed old passwords
+* Prevent reuse of previous passwords
+
+---
+
+# Non-Functional Requirements
+
+| Requirement | Description                               |
+| ----------- | ----------------------------------------- |
+| Security    | Passwords must not be stored in plaintext |
+| Performance | Fast password evaluation                  |
+| Reliability | Accurate strength detection               |
+| Usability   | Easy-to-use interface                     |
+| Scalability | Can support database integration          |
+
+---
+
+# Tools & Technologies
+
+| Technology | Usage                     |
+| ---------- | ------------------------- |
+| Python     | Main development language |
+| VS Code    | Code editor               |
+| SQLite     | Optional database         |
+| `bcrypt`   | Password hashing          |
+| Git        | Version control           |
+
+---
+
+# Optional Advanced Requirements
+
+* GUI using Tkinter
+* Web version using Flask/Django
+* Dark mode UI
+* Real-time password strength meter
+* Breached password detection API
+* Multi-user authentication support
+
+---
+
+# Expected Outcome
+
+The project should:
+
+* Analyze password security
+* Generate stronger passwords
+* Teach basic cryptography concepts
+* Improve understanding of authentication systems
